@@ -2,14 +2,14 @@
 
 import sys
 from device import Device
-import json
+import json  # not used in this script anymore
 import xmltodict
 import time
 
 
 file_list = sys.argv
-app_file_name = file_list[1] #Approved version check
-ip_file_name = file_list[2]  #IP Address List
+app_file_name = file_list[1] #Approved version check file must come first after verchk.py
+ip_file_name = file_list[2]  #IP Address List file must come after approved version.
 
 file_object = open(app_file_name,"r")
 app_version = file_object.readline().strip()
