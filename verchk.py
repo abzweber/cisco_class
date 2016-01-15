@@ -8,8 +8,8 @@ import time
 
 
 file_list = sys.argv
-app_file_name = file_list[1]
-ip_file_name = file_list[2]
+app_file_name = file_list[1] #Approved version check
+ip_file_name = file_list[2]  #IP Address List
 
 file_object = open(app_file_name,"r")
 app_version = file_object.readline().strip()
